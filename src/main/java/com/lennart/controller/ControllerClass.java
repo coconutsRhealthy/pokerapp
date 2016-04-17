@@ -28,7 +28,7 @@ public class ControllerClass {
         ModelAndView mav = new ModelAndView("index");
         mav.addObject("message", "Add book to DB successfully");
         System.out.println(request.getParameter("age"));
-
+//hoi
         return mav;
     }
 }
