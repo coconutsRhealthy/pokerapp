@@ -28,3 +28,8 @@ function reset(){
     document.getElementById("second startcard").innerHTML="Second startcard:"
     document.getElementById("startcard").innerHTML = "First startcard"
 }
+
+function test() {
+    document.getElementById("mytext").value = "My value";
+}
+

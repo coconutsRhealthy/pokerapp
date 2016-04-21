@@ -29,15 +29,27 @@
 <p id="first startcard">First startcard:</p>
 <p id="second startcard">Second startcard:</p>
 <table>
-    <td>
-        <form method="post" action="postStartHand" commandName="eijers">
-            <button class="proceedOrStayButton" type="submit" id="ok" disabled>OK</button>
-            <input name="age" type="text"/>
-        </form>
-    </td>
-    <td>
-        <button class="proceedOrStayButton" type="button" id="reset" onclick="reset()" disabled>Reset</button>
-    </td>
+    <tr>
+        <td style="vertical-align:top;">
+            <form:form method="post" action="postStartHand" commandName="userForm">
+
+                <form:input path="yourStartHand" id="mytext" value="sjaak" hidden="true" />
+
+                <button class="proceedOrStayButton" type="submit" id="ok" onclick="test()" disabled>OK</button>
+
+
+
+            </form:form>
+        </td>
+        <td style="vertical-align:top;">
+            <button class="proceedOrStayButton" type="button" id="reset" onclick="reset()" disabled>Reset</button>
+        </td>
+    </tr>
 </table>
+
+
+
+
+
 </body>
 </html>
