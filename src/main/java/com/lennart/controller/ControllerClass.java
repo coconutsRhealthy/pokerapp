@@ -21,6 +21,7 @@ public class ControllerClass {
         ModelAndView mav = new ModelAndView("index");
         mav.addObject("startCard", startCard);
         return mav;
+        //test
     }
 
     @RequestMapping(value = "/postStartHand", method = RequestMethod.POST)
