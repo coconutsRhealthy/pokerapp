@@ -33,10 +33,11 @@
         <td style="vertical-align:top;">
             <form:form method="post" action="postStartHand" commandName="userForm">
 
+                <c:set var="countertje2" value="0"/>
                 <c:forEach varStatus="vs" var="eijerslist" items="${userForm.eijersList}" >
 
-                    <form:input path="eijersList[${vs.index}].yourStartHand" id="mytext" value="sjaak" hidden="true" />
-                    <form:input path="eijersList[${vs.index}].yourStartHand" id="mytext2" value="bart" hidden="true" />
+                    <form:input path="eijersList[${vs.index}].yourStartHand" id="mytext${countertje2}" value="sjaak" hidden="true" />
+                    <c:set var="countertje2" value="${countertje2 + 1}" />
 
                 </c:forEach>
 
