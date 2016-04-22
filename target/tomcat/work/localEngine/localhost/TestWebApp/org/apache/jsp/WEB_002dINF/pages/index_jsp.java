@@ -13,6 +13,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody;
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvarStatus_005fend_005fbegin;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fcommandName_005faction;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvarStatus_005fvar_005fitems;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005fpath_005fid_005fhidden_005fnobody;
 
   private javax.el.ExpressionFactory _el_expressionfactory;
   private org.apache.AnnotationProcessor _jsp_annotationprocessor;
@@ -24,6 +27,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
   public void _jspInit() {
     _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvarStatus_005fend_005fbegin = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fcommandName_005faction = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvarStatus_005fvar_005fitems = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005fpath_005fid_005fhidden_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
     _jsp_annotationprocessor = (org.apache.AnnotationProcessor) getServletConfig().getServletContext().getAttribute(org.apache.AnnotationProcessor.class.getName());
   }
@@ -31,6 +37,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
   public void _jspDestroy() {
     _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.release();
     _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvarStatus_005fend_005fbegin.release();
+    _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fcommandName_005faction.release();
+    _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvarStatus_005fvar_005fitems.release();
+    _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005fpath_005fid_005fhidden_005fnobody.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -57,45 +66,54 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n");
-      out.write("\n");
-      out.write("<html>\n");
-      out.write("<head>\n");
-      out.write("\n");
-      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"/TestWebApp/style.css\" />\n");
-      out.write("<script src=\"/TestWebApp/script.js\">\n");
-      out.write("</script>\n");
-      out.write("\n");
-      out.write("</head>\n");
-      out.write("<body>\n");
-      out.write("<p id=\"startcard\">First startcard</p>\n");
-      out.write("\n");
-      out.write("<table>\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<html>\r\n");
+      out.write("<head>\r\n");
+      out.write("\r\n");
+      out.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"/TestWebApp/style.css\" />\r\n");
+      out.write("<script src=\"/TestWebApp/script.js\">\r\n");
+      out.write("</script>\r\n");
+      out.write("\r\n");
+      out.write("</head>\r\n");
+      out.write("<body>\r\n");
+      out.write("<p id=\"startcard\">First startcard</p>\r\n");
+      out.write("\r\n");
+      out.write("<table>\r\n");
       if (_jspx_meth_c_005fset_005f0(_jspx_page_context))
         return;
+      out.write('\r');
       out.write('\n');
       if (_jspx_meth_c_005fset_005f1(_jspx_page_context))
         return;
+      out.write('\r');
       out.write('\n');
       if (_jspx_meth_c_005fforEach_005f0(_jspx_page_context))
         return;
-      out.write("\n");
-      out.write("</table>\n");
-      out.write("\n");
-      out.write("<p id=\"first startcard\">First startcard:</p>\n");
-      out.write("<p id=\"second startcard\">Second startcard:</p>\n");
-      out.write("<table>\n");
-      out.write("    <td>\n");
-      out.write("        <form method=\"post\" action=\"postStartHand\" commandName=\"eijers\">\n");
-      out.write("            <button class=\"proceedOrStayButton\" type=\"submit\" id=\"ok\" disabled>OK</button>\n");
-      out.write("            <input name=\"age\" type=\"text\"/>\n");
-      out.write("        </form>\n");
-      out.write("    </td>\n");
-      out.write("    <td>\n");
-      out.write("        <button class=\"proceedOrStayButton\" type=\"button\" id=\"reset\" onclick=\"reset()\" disabled>Reset</button>\n");
-      out.write("    </td>\n");
-      out.write("</table>\n");
-      out.write("</body>\n");
+      out.write("\r\n");
+      out.write("</table>\r\n");
+      out.write("\r\n");
+      out.write("<p id=\"first startcard\">First startcard:</p>\r\n");
+      out.write("<p id=\"second startcard\">Second startcard:</p>\r\n");
+      out.write("<table>\r\n");
+      out.write("    <tr>\r\n");
+      out.write("        <td style=\"vertical-align:top;\">\r\n");
+      out.write("            ");
+      if (_jspx_meth_form_005fform_005f0(_jspx_page_context))
+        return;
+      out.write("\r\n");
+      out.write("        </td>\r\n");
+      out.write("        <td style=\"vertical-align:top;\">\r\n");
+      out.write("            <button class=\"proceedOrStayButton\" type=\"button\" id=\"reset\" onclick=\"reset()\" disabled>Reset</button>\r\n");
+      out.write("        </td>\r\n");
+      out.write("    </tr>\r\n");
+      out.write("</table>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
@@ -170,13 +188,13 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       int _jspx_eval_c_005fforEach_005f0 = _jspx_th_c_005fforEach_005f0.doStartTag();
       if (_jspx_eval_c_005fforEach_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n");
-          out.write("    <tr>\n");
+          out.write("\r\n");
+          out.write("    <tr>\r\n");
           out.write("    ");
           if (_jspx_meth_c_005fforEach_005f1(_jspx_th_c_005fforEach_005f0, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f0))
             return true;
-          out.write("\n");
-          out.write("    </tr>\n");
+          out.write("\r\n");
+          out.write("    </tr>\r\n");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
             break;
@@ -215,18 +233,18 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       int _jspx_eval_c_005fforEach_005f1 = _jspx_th_c_005fforEach_005f1.doStartTag();
       if (_jspx_eval_c_005fforEach_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
-          out.write("\n");
-          out.write("        <td>\n");
+          out.write("\r\n");
+          out.write("        <td>\r\n");
           out.write("        <button class=\"cardButton\" type=\"button\" id=\"");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${startCard[counter]}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
           out.write("\" onclick=\"getStartCard(this.id)\">");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${startCard[counter]}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-          out.write("</button>\n");
+          out.write("</button>\r\n");
           out.write("        ");
           if (_jspx_meth_c_005fset_005f2(_jspx_th_c_005fforEach_005f1, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f1))
             return true;
-          out.write("\n");
-          out.write("        </td>\n");
+          out.write("\r\n");
+          out.write("        </td>\r\n");
           out.write("    ");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f1.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -265,6 +283,172 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       return true;
     }
     _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f2);
+    return false;
+  }
+
+  private boolean _jspx_meth_form_005fform_005f0(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  form:form
+    org.springframework.web.servlet.tags.form.FormTag _jspx_th_form_005fform_005f0 = (org.springframework.web.servlet.tags.form.FormTag) _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fcommandName_005faction.get(org.springframework.web.servlet.tags.form.FormTag.class);
+    _jspx_th_form_005fform_005f0.setPageContext(_jspx_page_context);
+    _jspx_th_form_005fform_005f0.setParent(null);
+    // /WEB-INF/pages/index.jsp(34,12) name = method type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005fform_005f0.setMethod("post");
+    // /WEB-INF/pages/index.jsp(34,12) name = action type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005fform_005f0.setAction("postStartHand");
+    // /WEB-INF/pages/index.jsp(34,12) name = commandName type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005fform_005f0.setCommandName("userForm");
+    int[] _jspx_push_body_count_form_005fform_005f0 = new int[] { 0 };
+    try {
+      int _jspx_eval_form_005fform_005f0 = _jspx_th_form_005fform_005f0.doStartTag();
+      if (_jspx_eval_form_005fform_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\r\n");
+          out.write("\r\n");
+          out.write("                ");
+          if (_jspx_meth_c_005fforEach_005f2(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
+            return true;
+          out.write("\r\n");
+          out.write("\r\n");
+          out.write("                <button class=\"proceedOrStayButton\" type=\"submit\" id=\"ok\" onclick=\"test()\" disabled>OK</button>\r\n");
+          out.write("\r\n");
+          out.write("\r\n");
+          out.write("\r\n");
+          out.write("            ");
+          int evalDoAfterBody = _jspx_th_form_005fform_005f0.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_form_005fform_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_form_005fform_005f0[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_form_005fform_005f0.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_form_005fform_005f0.doFinally();
+      _005fjspx_005ftagPool_005fform_005fform_0026_005fmethod_005fcommandName_005faction.reuse(_jspx_th_form_005fform_005f0);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_005fforEach_005f2(javax.servlet.jsp.tagext.JspTag _jspx_th_form_005fform_005f0, PageContext _jspx_page_context, int[] _jspx_push_body_count_form_005fform_005f0)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f2 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvarStatus_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_005fforEach_005f2.setPageContext(_jspx_page_context);
+    _jspx_th_c_005fforEach_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
+    // /WEB-INF/pages/index.jsp(36,16) name = varStatus type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f2.setVarStatus("vs");
+    // /WEB-INF/pages/index.jsp(36,16) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f2.setVar("eijerslist");
+    // /WEB-INF/pages/index.jsp(36,16) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f2.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/pages/index.jsp(36,16) '${userForm.eijersList}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${userForm.eijersList}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    int[] _jspx_push_body_count_c_005fforEach_005f2 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_005fforEach_005f2 = _jspx_th_c_005fforEach_005f2.doStartTag();
+      if (_jspx_eval_c_005fforEach_005f2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\r\n");
+          out.write("\r\n");
+          out.write("                    ");
+          if (_jspx_meth_form_005finput_005f0(_jspx_th_c_005fforEach_005f2, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f2))
+            return true;
+          out.write("\r\n");
+          out.write("                    ");
+          if (_jspx_meth_form_005finput_005f1(_jspx_th_c_005fforEach_005f2, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f2))
+            return true;
+          out.write("\r\n");
+          out.write("\r\n");
+          out.write("                ");
+          int evalDoAfterBody = _jspx_th_c_005fforEach_005f2.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_005fforEach_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_005fforEach_005f2[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_005fforEach_005f2.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_005fforEach_005f2.doFinally();
+      _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvarStatus_005fvar_005fitems.reuse(_jspx_th_c_005fforEach_005f2);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_form_005finput_005f0(javax.servlet.jsp.tagext.JspTag _jspx_th_c_005fforEach_005f2, PageContext _jspx_page_context, int[] _jspx_push_body_count_c_005fforEach_005f2)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  form:input
+    org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f0 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005fpath_005fid_005fhidden_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
+    _jspx_th_form_005finput_005f0.setPageContext(_jspx_page_context);
+    _jspx_th_form_005finput_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f2);
+    // /WEB-INF/pages/index.jsp(38,20) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005finput_005f0.setPath((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("eijersList[${vs.index}].yourStartHand", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+    // /WEB-INF/pages/index.jsp(38,20) name = id type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005finput_005f0.setId("mytext");
+    // /WEB-INF/pages/index.jsp(38,20) null
+    _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "value", new String("sjaak"));
+    // /WEB-INF/pages/index.jsp(38,20) null
+    _jspx_th_form_005finput_005f0.setDynamicAttribute(null, "hidden", new String("true"));
+    int[] _jspx_push_body_count_form_005finput_005f0 = new int[] { 0 };
+    try {
+      int _jspx_eval_form_005finput_005f0 = _jspx_th_form_005finput_005f0.doStartTag();
+      if (_jspx_th_form_005finput_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_form_005finput_005f0[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_form_005finput_005f0.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_form_005finput_005f0.doFinally();
+      _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005fpath_005fid_005fhidden_005fnobody.reuse(_jspx_th_form_005finput_005f0);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_form_005finput_005f1(javax.servlet.jsp.tagext.JspTag _jspx_th_c_005fforEach_005f2, PageContext _jspx_page_context, int[] _jspx_push_body_count_c_005fforEach_005f2)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  form:input
+    org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_005finput_005f1 = (org.springframework.web.servlet.tags.form.InputTag) _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005fpath_005fid_005fhidden_005fnobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
+    _jspx_th_form_005finput_005f1.setPageContext(_jspx_page_context);
+    _jspx_th_form_005finput_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f2);
+    // /WEB-INF/pages/index.jsp(39,20) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005finput_005f1.setPath((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("eijersList[${vs.index}].yourStartHand", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
+    // /WEB-INF/pages/index.jsp(39,20) name = id type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005finput_005f1.setId("mytext2");
+    // /WEB-INF/pages/index.jsp(39,20) null
+    _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "value", new String("bart"));
+    // /WEB-INF/pages/index.jsp(39,20) null
+    _jspx_th_form_005finput_005f1.setDynamicAttribute(null, "hidden", new String("true"));
+    int[] _jspx_push_body_count_form_005finput_005f1 = new int[] { 0 };
+    try {
+      int _jspx_eval_form_005finput_005f1 = _jspx_th_form_005finput_005f1.doStartTag();
+      if (_jspx_th_form_005finput_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_form_005finput_005f1[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_form_005finput_005f1.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_form_005finput_005f1.doFinally();
+      _005fjspx_005ftagPool_005fform_005finput_0026_005fvalue_005fpath_005fid_005fhidden_005fnobody.reuse(_jspx_th_form_005finput_005f1);
+    }
     return false;
   }
 }

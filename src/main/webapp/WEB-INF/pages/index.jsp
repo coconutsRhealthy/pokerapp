@@ -33,7 +33,12 @@
         <td style="vertical-align:top;">
             <form:form method="post" action="postStartHand" commandName="userForm">
 
-                <form:input path="yourStartHand" id="mytext" value="sjaak" hidden="true" />
+                <c:forEach varStatus="vs" var="eijerslist" items="${userForm.eijersList}" >
+
+                    <form:input path="eijersList[${vs.index}].yourStartHand" id="mytext" value="sjaak" hidden="true" />
+                    <form:input path="eijersList[${vs.index}].yourStartHand" id="mytext2" value="bart" hidden="true" />
+
+                </c:forEach>
 
                 <button class="proceedOrStayButton" type="submit" id="ok" onclick="test()" disabled>OK</button>
 

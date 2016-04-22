@@ -1,7 +1,9 @@
 package com.lennart.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import com.lennart.beans.CardWrapper;
 import com.lennart.beans.Eijers;
 import com.lennart.beans.StartHands;
 import org.springframework.stereotype.Controller;
@@ -24,19 +26,36 @@ public class ControllerClass {
         ModelAndView mav = new ModelAndView("index");
         mav.addObject("startCard", startCard);
 
-        Eijers eije = new Eijers();
+        //Eijers eije = new Eijers();
 
-        model.addAttribute("userForm", eije);
+        Eijers eije1 = new Eijers();
+        Eijers eije2 = new Eijers();
+        ArrayList<Eijers> hmm = new ArrayList<Eijers>();
+        hmm.add(eije1);
+        hmm.add(eije2);
+
+        CardWrapper cardWrapper = new CardWrapper();
+
+        cardWrapper.setEijersList(hmm);
+
+        model.addAttribute("userForm", cardWrapper);
+        //model.addAttribute("userForm", eije);
 
         return mav;
         //test
     }
 
     @RequestMapping(value = "/postStartHand", method = RequestMethod.POST)
-    public ModelAndView postStartHand(@ModelAttribute("userForm") Eijers eije) {
+    public ModelAndView postStartHand(@ModelAttribute("userForm") CardWrapper cardWrapper) {
         ModelAndView mav = new ModelAndView("index");
 
-        System.out.println(eije.getYourStartHand());
+        ArrayList<Eijers> listInSecondMethod = cardWrapper.getEijersList();
+        System.out.println(listInSecondMethod.get(0).getYourStartHand());
+        System.out.println(listInSecondMethod.get(1).getYourStartHand());
+
+        //System.out.println()
+
+        //System.out.println(eije.getYourStartHand());
 
 
 

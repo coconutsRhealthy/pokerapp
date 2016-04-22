@@ -1,3 +1,4 @@
-com/lennart/controller/ControllerClass.class
-com/lennart/beans/Eijers.class
-com/lennart/beans/StartHands.class
+com\lennart\beans\StartHands.class
+com\lennart\controller\ControllerClass.class
+com\lennart\beans\CardWrapper.class
+com\lennart\beans\Eijers.class
