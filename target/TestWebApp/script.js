@@ -3,11 +3,16 @@ function getStartCard(clicked_id){
         document.getElementById("first startcard").innerHTML="First startcard: " + clicked_id
         document.getElementById("startcard").innerHTML="Second startcard"
         document.getElementById("reset").disabled = false;
+
+        document.getElementById("mytext0").value = clicked_id;
+
     }
     else if(document.getElementById("second startcard").innerHTML == "Second startcard:") {
         document.getElementById("second startcard").innerHTML="Second startcard: " + clicked_id
         document.getElementById("startcard").innerHTML="Startcards chosen"
         document.getElementById("ok").disabled = false;
+
+        document.getElementById("mytext1").value = clicked_id;
 
         var cardButtons = document.getElementsByClassName("cardButton");
         for(var i = 0; i < cardButtons.length; i++) {
@@ -30,7 +35,7 @@ function reset(){
 }
 
 function test() {
-    document.getElementById("mytext").value = "My value";
-    document.getElementById("mytext2").value = "My value2";
+
+
 }
 
