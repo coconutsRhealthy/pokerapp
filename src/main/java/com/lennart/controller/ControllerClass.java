@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-import javax.servlet.http.HttpServletRequest;
 
 
 @Controller
@@ -43,6 +42,7 @@ public class ControllerClass {
 
         return mav;
         //test
+
     }
 
     @RequestMapping(value = "/postStartHand", method = RequestMethod.POST)
@@ -50,12 +50,18 @@ public class ControllerClass {
         ModelAndView mav = new ModelAndView("index");
 
         ArrayList<Eijers> listInSecondMethod = cardWrapper.getEijersList();
-        System.out.println(listInSecondMethod.get(0).getYourStartHand());
-        System.out.println(listInSecondMethod.get(1).getYourStartHand());
+
+        System.out.println("value of first card: " + listInSecondMethod.get(0).getCardValue());
+        System.out.println("suit of first card: " + listInSecondMethod.get(0).getCardSuit());
+
+        System.out.println();
+
+        System.out.println("value of second card: "+ listInSecondMethod.get(1).getCardValue());
+        System.out.println("suit of second card: " + listInSecondMethod.get(1).getCardSuit());
 
         //System.out.println()
 
-        //System.out.println(eije.getYourStartHand());
+        //System.out.println(eije.getCardValue());
 
 
 

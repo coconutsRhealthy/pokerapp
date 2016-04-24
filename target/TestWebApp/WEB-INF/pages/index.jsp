@@ -36,12 +36,14 @@
                 <c:set var="countertje2" value="0"/>
                 <c:forEach varStatus="vs" var="eijerslist" items="${userForm.eijersList}" >
 
-                    <form:input path="eijersList[${vs.index}].yourStartHand" id="mytext${countertje2}" value="sjaak" hidden="true" />
+                    <form:input path="eijersList[${vs.index}].cardValue" id="mytext${countertje2}" value="7" hidden="true" />
+                    <form:input path="eijersList[${vs.index}].cardSuit" id="mysuit${countertje2}" value="a" hidden="true" />
+
                     <c:set var="countertje2" value="${countertje2 + 1}" />
 
                 </c:forEach>
 
-                <button class="proceedOrStayButton" type="submit" id="ok" onclick="test()" disabled>OK</button>
+                <button class="proceedOrStayButton" type="submit" id="ok" disabled>OK</button>
 
 
 

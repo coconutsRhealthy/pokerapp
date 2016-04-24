@@ -4,13 +4,22 @@ package com.lennart.beans;
  * Created by lennart on 17-4-16.
  */
 public class Eijers {
-    private String yourStartHand;
+    private int cardValue;
+    private char cardSuit;
 
-    public String getYourStartHand() {
-        return yourStartHand;
+    public int getCardValue() {
+        return cardValue;
     }
 
-    public void setYourStartHand(String yourStartHand) {
-        this.yourStartHand = yourStartHand;
+    public void setCardValue(int cardValue) {
+        this.cardValue = cardValue;
+    }
+
+    public char getCardSuit() {
+        return cardSuit;
+    }
+
+    public void setCardSuit(char cardSuit) {
+        this.cardSuit = cardSuit;
     }
 }
