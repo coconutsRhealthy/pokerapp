@@ -1,4 +1,4 @@
-/home/lennart/Projects/TestWebApp/TestWebApp/src/main/java/com/lennart/beans/StartHands.java
-/home/lennart/Projects/TestWebApp/TestWebApp/src/main/java/com/lennart/controller/ControllerClass.java
-/home/lennart/Projects/TestWebApp/TestWebApp/src/main/java/com/lennart/beans/CardWrapper.java
-/home/lennart/Projects/TestWebApp/TestWebApp/src/main/java/com/lennart/beans/Eijers.java
+/home/lennart/Projects/TestWebApp/TestWebApp/src/main/java/com/lennart/model/Card.java
+/home/lennart/Projects/TestWebApp/TestWebApp/src/main/java/com/lennart/model/CardWrapper.java
+/home/lennart/Projects/TestWebApp/TestWebApp/src/main/java/com/lennart/model/ListOfAllStartCards.java
+/home/lennart/Projects/TestWebApp/TestWebApp/src/main/java/com/lennart/controller/PokerController.java

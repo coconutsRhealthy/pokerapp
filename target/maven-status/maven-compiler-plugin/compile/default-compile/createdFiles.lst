@@ -1,4 +1,4 @@
-com/lennart/beans/CardWrapper.class
-com/lennart/beans/Eijers.class
-com/lennart/beans/StartHands.class
-com/lennart/controller/ControllerClass.class
+com/lennart/model/ListOfAllStartCards.class
+com/lennart/model/Card.class
+com/lennart/controller/PokerController.class
+com/lennart/model/CardWrapper.class
