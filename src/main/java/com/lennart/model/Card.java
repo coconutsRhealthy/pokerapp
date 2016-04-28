@@ -22,4 +22,5 @@ public class Card {
     public void setCardSuit(char cardSuit) {
         this.cardSuit = cardSuit;
     }
+    //test for commit
 }
