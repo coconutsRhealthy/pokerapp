@@ -35,7 +35,7 @@ public class PokerController {
     }
 
     @RequestMapping(value = "/flop", method = RequestMethod.POST)
-    public String goToFlop(@ModelAttribute("cardWrapper") CardWrapper cardWrapper) {
+    public String goToFlop(@ModelAttribute("cardWrapper") CardWrapper cardWrapper, Model model) {
         ArrayList<Card> chosenStartCards = cardWrapper.getListOfCards();
 
         System.out.println("value of first card: " + chosenStartCards.get(0).getCardValue());
@@ -43,6 +43,15 @@ public class PokerController {
         System.out.println();
         System.out.println("value of second card: "+ chosenStartCards.get(1).getCardValue());
         System.out.println("suit of second card: " + chosenStartCards.get(1).getCardSuit());
+
+        ListOfAllStartCards listOfAllStartCardsd = new ListOfAllStartCards();
+        List<String> allStartCards = listOfAllStartCardsd.getAllStartCards();
+        model.addAttribute("allStartCards", allStartCards);
+
+        model.addAttribute("cardWrapper", cardWrapper);
+
+
+
         return "flop";
     }
 }
