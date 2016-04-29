@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class PokerController {
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
-    public String index(Model model) throws Exception {
+    public String renderPreflopPage(Model model) throws Exception {
         ListOfAllStartCards listOfAllStartCardsd = new ListOfAllStartCards();
         List<String> allStartCards = listOfAllStartCardsd.getAllStartCards();
         model.addAttribute("allStartCards", allStartCards);
@@ -34,8 +34,8 @@ public class PokerController {
         return "index";
     }
 
-    @RequestMapping(value = "/postStartHand", method = RequestMethod.POST)
-    public String postStartHand(@ModelAttribute("cardWrapper") CardWrapper cardWrapper) {
+    @RequestMapping(value = "/flop", method = RequestMethod.POST)
+    public String goToFlop(@ModelAttribute("cardWrapper") CardWrapper cardWrapper) {
         ArrayList<Card> chosenStartCards = cardWrapper.getListOfCards();
 
         System.out.println("value of first card: " + chosenStartCards.get(0).getCardValue());
@@ -43,6 +43,6 @@ public class PokerController {
         System.out.println();
         System.out.println("value of second card: "+ chosenStartCards.get(1).getCardValue());
         System.out.println("suit of second card: " + chosenStartCards.get(1).getCardSuit());
-        return "index";
+        return "flop";
     }
 }

@@ -31,7 +31,7 @@
 <table>
     <tr>
         <td style="vertical-align:top;">
-            <form:form method="post" action="postStartHand" commandName="cardWrapper">
+            <form:form method="post" action="flop" commandName="cardWrapper">
                 <c:set var="counter" value="0"/>
                 <c:forEach varStatus="vs" var="listOfCards" items="${cardWrapper.listOfCards}" >
                     <form:input type="hidden" path="listOfCards[${vs.index}].cardValue" id="valueOfCard${counter}" value="7"/>
