@@ -4,12 +4,12 @@
 <head>
 
 <link rel="stylesheet" type="text/css" href="/TestWebApp/style.css" />
-<script src="/TestWebApp/script.js">
+<script src="/TestWebApp/scriptFlop.js">
 </script>
 
 </head>
 <body>
-<p id="startCardToBePicked">First startcard</p>
+<p id="startCardToBePicked">First flopcard</p>
 
 <table>
 <c:set var="counter" value="0"/>
@@ -25,11 +25,23 @@
 </c:forEach>
 </table>
 
-${cardWrapper.listOfCards[0].cardValue}
-${cardWrapper.listOfCards[0].cardSuit}
+<table>
+    <tr>
+        <td>
+            Holecards:
+        </td>
+    </tr>
+    <c:forEach var="listOfCards" items="${cardWrapper.listOfCards}" varStatus="vs">
+        <tr>
+            <td>
+                <div id="holeCardValueHidden[${vs.index}]" hidden="true">${listOfCards.cardValue}</div>
+                <div id="holeCardSuitHidden[${vs.index}]" hidden="true">${listOfCards.cardSuit}</div>
+                <div id="holeCard[${vs.index}]"></div>
+            </td>
+        </tr>
+    </c:forEach>
+</table>
 
-
-<c:forEach varStatus="vs" var="listOfCards" items="${cardWrapper.listOfCards}">
-        <c:out value="${listOfCards[${vs.index}].cardValue}"/>
-        <c:out value="${listOfCards[${vs.index}].cardSuit}"/>
-</c:forEach>
+<script>
+    changeCardValueToCharacterWhenValueAboveNine()
+</script>
