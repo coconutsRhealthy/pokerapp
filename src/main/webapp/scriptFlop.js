@@ -33,3 +33,23 @@ function changeCardValueToCharacterWhenValueAboveNine() {
         }
     }
 }
+
+function getFlopCard(clicked_id){
+    var flopCardToBePicked = document.getElementById("flopCardToBePicked").innerHTML
+    switch(flopCardToBePicked) {
+        case "First flopcard":
+            document.getElementById("flopCard0").innerHTML=clicked_id;
+            document.getElementById("flopCardToBePicked").innerHTML = "Second flopcard"
+            document.getElementById("reset").disabled = false;
+            break;
+        case "Second flopcard":
+            document.getElementById("flopCard1").innerHTML=clicked_id;
+            document.getElementById("flopCardToBePicked").innerHTML = "Third flopcard"
+            break;
+        case "Third flopcard":
+            document.getElementById("flopCard2").innerHTML=clicked_id;
+            document.getElementById("flopCardToBePicked").innerHTML = "Flopcards chosen"
+            document.getElementById("ok").disabled = false;
+            break;
+    }
+}
