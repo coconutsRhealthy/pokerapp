@@ -2,6 +2,7 @@ function getStartCard(clicked_id){
     if(document.getElementById("startCardToBePicked").innerHTML == "First startcard") {
         document.getElementById("selectedFirstStartCard").innerHTML="First startcard: " + clicked_id;
         document.getElementById("startCardToBePicked").innerHTML="Second startcard";
+        document.getElementById(clicked_id).disabled = true;
         document.getElementById("reset").disabled = false;
 
         document.getElementById("valueOfCard0").value = getValueOfClickedId(clicked_id);

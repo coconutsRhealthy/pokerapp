@@ -65,4 +65,5 @@
 
 <script>
     changeCardValueToCharacterWhenValueAboveNine()
+    disableHolecardButtons()
 </script>
