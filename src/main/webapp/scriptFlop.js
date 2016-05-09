@@ -46,7 +46,11 @@ function getFlopCard(clicked_id){
             document.getElementById("flopCard2").innerHTML=clicked_id;
             document.getElementById("flopCardToBePicked").innerHTML = "Flopcards chosen"
             document.getElementById("ok").disabled = false;
-            document.getElementById(clicked_id).disabled = true;
+
+            var cardButtons = document.getElementsByClassName("cardButton");
+            for(var i = 0; i < cardButtons.length; i++) {
+              cardButtons[i].disabled = true;
+            }
             break;
     }
 }
@@ -63,4 +67,19 @@ function getHoleCard(firstOrSecondHolecardValue, firstOrSecondHolecardSuit) {
     var suitHoleCard = document.getElementById(firstOrSecondHolecardSuit).innerHTML;
     var holeCard = valueHoleCard + suitHoleCard;
     return holeCard;
+}
+
+function reset(){
+    var cardButtons = document.getElementsByClassName("cardButton");
+    for(var i = 0; i < cardButtons.length; i++) {
+      cardButtons[i].disabled = false;
+    }
+    disableHolecardButtons();
+    document.getElementById("flopCardToBePicked").innerHTML = "First flopcard";
+    document.getElementById("reset").disabled = true;
+    document.getElementById("ok").disabled = true;
+
+    document.getElementById("flopCard0").innerHTML = "...";
+    document.getElementById("flopCard1").innerHTML = "...";
+    document.getElementById("flopCard2").innerHTML = "...";
 }
