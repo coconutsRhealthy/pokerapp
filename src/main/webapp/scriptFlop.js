@@ -83,3 +83,11 @@ function reset(){
     document.getElementById("flopCard1").innerHTML = "...";
     document.getElementById("flopCard2").innerHTML = "...";
 }
+
+$(document).ready(function () {
+    $("#handEvaluation").height($("#cardButtons").height());
+    $("#cardButtonsAndHandEvaluation").height($("#cardButtons").height());
+});
+
+
+

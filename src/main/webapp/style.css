@@ -8,3 +8,21 @@
   height: 25px;
 }
 
+#cardButtons {
+    float: left;
+    margin-right: 10px;
+}
+
+#handEvaluation {
+    width: 50%;
+    float: left;
+    background-color: rgb(243,249,255);
+}
+
+#cardButtonsAndHandEvaluation {
+    margin-bottom: 10px;
+}
+
+
+
+
