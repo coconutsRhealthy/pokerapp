@@ -90,6 +90,64 @@
 </div>
 
 
+
+    <div align="center">
+        <br> <br> ${message} <br> <br>
+        <div id="result"></div>
+        <br>
+        <p>
+            by <a href="http://crunchify.com">Crunchify.com</a>
+        </p>
+    </div>
+
+    <button class="proceedOrStayButton" type="button" id="reset" onclick="postAjax()">TestAjax</button>
+
+
+
+
+
+
+<script>
+    function crunchifyAjax() {
+        $.ajax({
+
+            type: "GET",
+            dataType : 'json',
+            url : 'ajaxtest',
+            success : function(data) {
+                alert(data);
+                $('#result').html(JSON.stringify(data));
+            }
+        });
+    }
+</script>
+
+
+
+
+<script>
+    function postAjax() {
+        $.ajax({
+
+            type: "POST",
+            dataType : 'json',
+            url : 'testje',
+            data : JSON.stringify("hoi"),
+            success : function(data) {
+                alert(data);
+                $('#result').html(JSON.stringify(data));
+            }
+        });
+    }
+</script>
+
+
+
+
+
+
+
+
 <script>
     changeCardValueToCharacterWhenValueAboveNine()
     disableHolecardButtons()

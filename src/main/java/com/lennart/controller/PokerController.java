@@ -2,15 +2,13 @@ package com.lennart.controller;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import com.lennart.model.Card;
 import com.lennart.model.CardWrapper;
 import com.lennart.model.ListOfAllStartCards;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
+
 
 
 @Controller
@@ -54,4 +52,33 @@ public class PokerController {
 
         return "flop";
     }
+
+    @RequestMapping(value = "/ajaxtest", method = RequestMethod.GET)
+    public @ResponseBody List<Card> getTime() {
+        Card testCard = new Card();
+        testCard.setCardSuit('d');
+        testCard.setCardValue(9);
+
+        Card testCard2 = new Card();
+        testCard2.setCardSuit('c');
+        testCard2.setCardValue(8);
+
+        List<Card> eijemmm = new ArrayList<Card>();
+        eijemmm.add(testCard);
+        eijemmm.add(testCard2);
+
+        System.out.println("cockboy");
+        return eijemmm;
+    }
+
+
+    @RequestMapping(value = "testje", method = RequestMethod.POST)
+    public @ResponseBody Card ajaxtestpost(@RequestBody String string) {
+
+        System.out.println(string);
+        Card eije = new Card();
+
+        return eije;
+    }
+
 }
